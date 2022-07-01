@@ -1,22 +1,15 @@
 'use script';
 
-// 変数 let
+for (let i = 1; i <= 10; i++) {
+  if(i%3 === 0) {
+    continue;
+  }
+  console.log(i);
+}
 
-let price = 100;
-console.log(price)
-
-// price = price + 100
-price += 100;
-console.log(price);
-
-// price = price * 2 
-price *= 100;
-console.log(price);
-
-// price +=  1
-price ++;
-console.log(price);
-
-// price +=  1
-price --;
-console.log(price);
+for (let i = 1; i <= 10; i++) {
+  if(i%3 === 0) {
+    break;
+  }
+  console.log(i);
+}
